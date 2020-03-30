@@ -1,0 +1,13 @@
+{
+	"name": "WebAgency",
+	"short_name": "WebAgency",
+	"icons": [{
+		"src": "images/icone.png",
+		"sizes": "128x128",
+		"type": "image/png"
+    }],
+	"start_url": "index.html",
+	"display": "standalone",
+	"background_color": "#ffffff",
+	"theme_color": "#5cadd3"
+}

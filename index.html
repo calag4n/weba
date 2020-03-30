@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="WebAgency l'agence de tous vos projets.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Open Graph Data -->
+	<meta property="og:title" content="Web Agency" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.projet-ocr.ovh/webagency" />
+	<meta property="og:image" content="http://www.projet-ocr.ovh/webagency/images/logo.png" />
+	<meta property="og:description" content="Agence n°1 pour la conception, la mise en ligne et le référencement de vos sites web. " />
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Web Agency">
+	<meta name="twitter:description" content="Agence n°1 pour la conception, la mise en ligne et le référencement de vos sites web.">
+	<meta name="twitter:creator" content="@steeve_dieu">
+	<meta name="twitter:image" content="http://www.projet-ocr.ovh/webagency/images/logo.png">
+
+	<link rel="manifest" href="manifest.json">
+	<link rel="icon" href="favicon.png" type="image/png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<title>Web Agency</title>
+</head>
+
+<body>
+	<header>
+		<div class="navbar">
+			<div class="logo-wrapper">
+				<img src="images/logo.png" id="logo" alt="logo WebAgency">
+			</div>
+			
+			<input id="menu-mobile" type="checkbox" name="menu-mobile">
+			<nav class="menu">
+				<ul>
+					<li><a href="#">Accueil</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#projets">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			
+			<label for="menu-mobile" class="menu-mobile">
+				<i class="fa fa-bars fa-lg"></i>
+			</label>
+		</div>
+
+		<div class="wrapper">
+			<figure id="slideshow">
+				<figcaption id="text_slide">
+					<h1><span class="bleu">WEB AGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
+					<p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+					<a href="#" class="bouton">Plus d'infos</a>
+				</figcaption>
+
+				<div class="flex-wrapper-header">
+					<!-- checkbox servant d'interrupteur ON/OFF pour alterner image1/image2 -->
+					<input type="checkbox" id="change-image" name="checkbox">
+					<img src="images/slider/bg1.jpg" alt="enfant qui peint" class="slide-img top" id="image1">
+					<img src="images/slider/bg2.jpg" alt="enfant avec un mégaphone" class="slide-img" id="image2">
+
+					<!-- flèches positionnées dans des labels qui 'travaillent' tous les deux pour la même checkbox -->
+					<label for="change-image" id="go-left">
+						<i class="fa fa-chevron-left fa-lg chevrons"></i>
+					</label>
+					<label for="change-image" id="go-right">
+						<i class="fa fa-chevron-right fa-lg chevron"></i>
+					</label>
+				</div>
+			</figure>
+		</div>
+	</header>
+
+
+	<section id="services">
+		<h2>NOS SERVICES</h2>
+		<div class="separateur">
+			<p><i class="fa fa-circle fa-sm bleu"></i></p>
+		</div>
+		<p class="description">Nous mettons tout en oeuvre pour vous fournir une prestation de qualité. <br/> Nos spécialistes sauront satisfaire les besoins de votre projet.
+		</p>
+		<div class="contenu">
+			
+			<figure id="image-service">
+				<img src="images/main-feature.png"  alt="écran Apple">
+			</figure>
+			
+			<div class="wrapper">
+				<div class="service" id="ux">
+					<div class="rubrique">
+						<h4>UX design</h4>
+						<div class="cercle">
+							<div class="point-bleu"></div>
+							<p class="icones">
+								<i class="fa fa-chart-line fa-2x bleu"></i>
+							</p>
+						</div>
+					</div>
+					<p>Elaborer un design fonctionnel et agréable pour l'utilisateur est une règle de base chez WebAgency.</p>
+				</div>
+
+				<div class="service" id="ui">
+					<div class="rubrique">
+						<h4>UI design</h4>
+						<div class="cercle">
+							<div class="point-bleu"></div>
+							<p class="icones">
+								<i class="fa fa-cubes fa-2x bleu"></i>
+							</p>
+						</div>
+					</div>
+					<p>Même les projets les plus complexes doivent être amenés a leur forme la plus élégante.</p>
+				</div>
+
+				<div class="service" id="seo">
+					<div class="rubrique">
+						<h4>SEO</h4>
+						<div class="cercle">
+							<div class="point-bleu"></div>
+							<p class="icones">
+								<i class="fa fa-chart-pie fa-2x bleu"></i>
+							</p>
+						</div>
+					</div>
+					<p>Maitrîser le référencement et autres techniques d'optimisation pour moteur de recherche est indispensable pour s'assurer d'une visiblité efficace et permanente.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section id="projets">
+		<h2>NOS PROJETS</h2>
+		<div class="separateur">
+			<p><i class="fa fa-circle fa-sm bleu"></i></p>
+		</div>
+		<p class="description">Nous sommes fiers de vous présenter un échantillon de notre travail. Nous sommes, bien sûr, à votre écoute pour tous types de projet aussi innovant soit-il.</p>
+
+		<!-- Les commentaires suivants sont déstinés à supprimer les white-spaces entre les éléments 'inline-block' -->
+
+		<input type="radio" id="all-works" name="radio" checked><!--
+		--><label for="all-works" id="onglet-all-works">
+			All Works		
+			<i class="fa fa-caret-down fa-lg bleu triangle"></i>			
+		</label><!--
+
+		--><input type="radio" id="creative" name="radio"><!--
+		--><label for="creative" id="onglet-creative">
+			Creative			
+			<i class="fa fa-caret-down fa-lg bleu triangle"></i>			
+		</label><!--
+
+		--><input type="radio" id="corporate" name="radio"><!--
+		--><label for="corporate" id="onglet-corporate">
+			Corporate			
+			<i class="fa fa-caret-down fa-lg bleu triangle"></i>			
+		</label><!--
+
+		--><input type="radio" id="portfolio" name="radio"><!--
+		--><label for="portfolio" id="onglet-portfolio">
+			Portfolio			
+			<i class="fa fa-caret-down fa-lg bleu triangle"></i>			
+		</label>
+
+		<div class="contenu">
+			<div class="flex-h">
+
+				<figure class="image-projet portfolio">
+					<img src="images/portfolio/01.jpg" alt="déguisement lunettes et nez">
+					<figcaption class="coup-d-oeil">
+						<h6>Ceci est un nez !</h6>
+						<p>Contrairement aux apparences...</p>
+					</figcaption>
+					<div class="oeil">
+						<i class="fa fa-eye fa-lg"></i>
+					</div>
+				</figure>
+				
+				<figure class="image-projet creative">
+					<img src="images/portfolio/02.jpg" alt="homme déguisé en lapin">
+					<figcaption class="coup-d-oeil">
+						<h6>Euh...</h6>
+						<p>On m'avait dit soirée déguisée...</p>
+					</figcaption>
+					<div class="oeil">
+						<i class="fa fa-eye fa-lg"></i>
+					</div>
+				</figure>
+
+
+				<figure class="image-projet creative">
+					<img src="images/portfolio/03.jpg" alt="logo de marque Pompadour">
+					<figcaption class="coup-d-oeil">
+						<h6>L'élégance pure</h6>
+						<p>Marque déposée.</p>
+					</figcaption>
+					<div class="oeil">
+						<i class="fa fa-eye fa-lg"></i>
+					</div>
+				</figure>
+				
+				<figure class="image-projet corporate">
+					<img src="images/portfolio/04.jpg" alt="document technique">
+					<figcaption class="coup-d-oeil">
+						<h6>Promis,</h6>
+						<p>C'est eux qui ont voulut ce jaune.</p>
+					</figcaption>
+					<div class="oeil">
+						<i class="fa fa-eye fa-lg"></i>
+					</div>
+				</figure>
+
+				<figure class="image-projet portfolio">
+					<img src="images/portfolio/05.jpg" alt="sac de shopping blanc et noir">
+					<figcaption class="coup-d-oeil">
+						<h6>Quelle beauté !</h6>
+						<p>On y va juste pour les sacs.</p>
+					</figcaption>
+					<div class="oeil">
+						<i class="fa fa-eye fa-lg"></i>
+					</div>
+				</figure>
+
+				<figure class="image-projet creative">
+					<img src="images/portfolio/06.jpg" alt="ville étrange">
+					<figcaption class="coup-d-oeil">
+						<h6>Marly-Gaumont</h6>
+						<p>Même plus une vache !</p>
+					</figcaption>
+					<div class="oeil">
+						<i class="fa fa-eye fa-lg"></i>
+					</div>
+				</figure>
+
+				<figure class="image-projet corporate">
+					<img src="images/portfolio/07.jpg" alt="fusée au décollage">
+					<figcaption class="coup-d-oeil">
+						<h6>SpaceX ?</h6>
+						<p>C'est nous qui les avons lancés...</p>
+					</figcaption>
+					<div class="oeil">
+						<i class="fa fa-eye fa-lg"></i>
+					</div>
+				</figure>
+				
+				<figure class="image-projet corporate">
+					<img src="images/portfolio/08.jpg" alt="accessoires de bureau">
+					<figcaption class="coup-d-oeil">
+						<h6>On range votre bureau...</h6>
+						<p>De manière absurde.</p>
+					</figcaption>
+					<div class="oeil">
+						<i class="fa fa-eye fa-lg"></i>
+					</div>
+				</figure>
+
+				<figure class="image-projet portfolio">
+					<img src="images/portfolio/full.jpg" alt="burger">
+					<figcaption class="coup-d-oeil">
+						<h6>Chérie...</h6>
+						<p>Joyeuse Saint Valentin !!!</p>
+					</figcaption>
+					<div class="oeil">
+						<i class="fa fa-eye fa-lg"></i>
+					</div>
+				</figure>
+				
+			</div>
+		</div>
+	</section>
+
+	<footer id="contact">
+		<div class="carte">
+			<iframe width="600" height="450" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAcfDkgGjk1Uq0SDEm_he5yw08BpcKFWL4&q=25+Rue+Hauteville+75010+Paris+FR" allowfullscreen>
+			</iframe>
+			<div class="filtre"></div>
+		</div>
+
+		<form>
+			<h3>Contact Info</h3>
+			<p><strong>WebAgency SAS</strong> <br/> 25 Rue d'Hauteville 75010 Paris <br/> <u>Tel:</u> 01 02 03 04 05
+			</p>
+			<div class="formulaire">
+				<input type="text" name="name" id="name" title="nom" placeholder="Nom"> <br/>
+				<input type="text" name="mail" id="mail" title="mail" placeholder="E-mail"> <br/>
+				<input type="text" name="subject" id="subject" title="subject" placeholder="Subject"> <br/>
+				<textarea name="message" id="message" title="message" placeholder="Message"></textarea>
+				<input type="submit" value="Send Message" class="bouton" id="envoie-form">
+			</div>
+		</form>
+	</footer>
+
+</body>
+
+</html>
